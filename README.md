@@ -1,2 +1,2 @@
 # finearts
-![alt text](../Photos/Flogo.jpeg?raw=true)
+![alt text](https://github.com/kathybeyer/finearts/pull/new/photos/FLogo.jpeg)
