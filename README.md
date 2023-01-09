@@ -1,2 +1,2 @@
 # finearts
-![Demo Animation](../Photos/Flogo.jpeg?raw=true)
+![alt text](../Photos/Flogo.jpeg?raw=true)
