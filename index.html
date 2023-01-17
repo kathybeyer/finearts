@@ -84,11 +84,29 @@ body {
   color: white;
 }
 </style>
-    <style>
+<style>
 .center {
     text-align: center;
     color: #2E2407;
     font-size: 50px;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 </head>
@@ -111,5 +129,16 @@ body {
          <a href="#about">About</a>
          <a class="active" href="#home">Home</a>
      </div>
+  <div class="row">
+    <div class="column">
+    <img src="./media/video/IMG_6731.jpeg" alt="Cat" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="./media/video/DSC_0493.jpeg" alt="Olmpia" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="./media/video/IMG_7248.jpg" alt="Santorini" style="width:100%">
+    </div>
+   </div>
 </body>
 </html>
