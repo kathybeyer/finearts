@@ -11,14 +11,15 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-}
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+  }
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
 </style>
+
 <style type="text/css">
-        .loader {
-            border: 16px solid #f3f3f3;
+  .loader {
+     border: 16px solid #f3f3f3;
             /* Light grey */
             border-top: 16px solid #048023;
             /* Dark Green */
@@ -26,34 +27,30 @@ div {text-align: center;}
             width: 120px;
             height: 120px;
             animation: spinloader 2s linear infinite;
-        }
-  
-        .loader img {
+  }
+  .loader img {
             height: 120px;
             width: 120px;
             animation: spinlogo 2s linear infinite;
-        }
-  
-        @keyframes spinloader {
+   }
+   @keyframes spinloader {
             0% {
                 transform: rotate(0deg);
             }
-  
             100% {
                 transform: rotate(360deg);
             }
-        }
-  
-        @keyframes spinlogo {
+   }
+   @keyframes spinlogo {
             0% {
                 transform: rotate(360deg);
             }
-  
             100% {
                 transform: rotate(0deg);
             }
-        }
-    </style>
+   }
+</style>
+
 <style>
 body {
   margin: 0;
@@ -64,7 +61,6 @@ body {
   overflow: hidden;
   background-color: #FFC300;
 }
-
 .topnav a {
   float: right;
   color: #f2f2f2;
@@ -73,41 +69,40 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a:hover {
   background-color: #ddd;
   color: light yellow;
 }
-
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
 </style>
+
 <style>
-.center {
+ .center {
     text-align: center;
     color: #2E2407;
     font-size: 50px;
-}
+ }
 </style>
+
 <style>
-* {
+box {
   box-sizing: border-box;
 }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+<!-- Clearfix (clear floats) -->
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+  }
 </style>
 </head>
 <body background="./media/IMG_8138.jpg">
@@ -130,15 +125,15 @@ body {
          <a class="active" href="#home">Home</a>
      </div>
   <div class="row">
-    <div class="column">
-    <img src="./media/videos/IMG_6731.jpeg" alt="Cat" style="width:100%">
-    </div>
-    <div class="column">
-    <img src="./media/videos/DSC_0493.jpeg" alt="Olmpia" style="width:100%">
-    </div>
-    <div class="column">
-    <img src="./media/videos/IMG_7248.jpg" alt="Santorini" style="width:100%">
-    </div>
+     <div class="column">
+     <img src="./media/videos/IMG_6731.jpeg" alt="Cat" style="width:100%">
+     </div>
+     <div class="column">
+     <img src="./media/videos/DSC_0493.jpeg" alt="Olmpia" style="width:100%">
+     </div>
+     <div class="column">
+     <img src="./media/videos/IMG_7248.jpg" alt="Santorini" style="width:100%">
+     </div>
    </div>
 </body>
 </html>
