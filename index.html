@@ -91,18 +91,47 @@ body {
 box {
   box-sizing: border-box;
 }
-  .column {
+body {
+  margin: 0;
+  font-family: Arial;
+}   
+.column {
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    width: 25%;
+    padding: 10px;
   }
-
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  }
+.column img:hover {
+  opacity: 1;
+ }   
 <!-- Clearfix (clear floats) -->
- .row::after {
+.row:after {
    content: "";
-   clear: both;
    display: table;
+   clear: both;
   }
+.container {
+  position: relative;
+  display: none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 </style>
     
 <style>
@@ -150,6 +179,21 @@ box {
      <img src="./media/videos/IMG_7248.jpg" alt="Santorini" style="width:100%">
      </div>
    </div>
+   <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
    <div class="footer">
      <p>© Copyright <a href="https://kathybeyer.github.io/finearts/"> Kathy Beyer Photography </a> 2023- All Right Reserved.</p> 
    </div>
