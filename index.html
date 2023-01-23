@@ -16,7 +16,35 @@
   p {text-align: center;}
   div {text-align: center;}
 </style>
-
+<style>
+   shadow {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(122, 116, 116);
+        }
+ 
+        .shape {
+            margin: 200px 0 0 350px;
+        }
+ 
+        h1 {
+            font-size: 6em;
+            color: rgba(0, 0, 0, .2);
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            transform-origin: bottom;
+            transform: skewX(50deg);
+ 
+        }
+ 
+        h1::before {
+            content: attr(data-title);
+            position: absolute;
+            color: #fff;
+            transform-origin: bottom;
+            transform: skewX(-50deg)
+        }
+</style>
 <style type="text/css">
   .loader {
      border: 16px solid #f3f3f3;
@@ -88,9 +116,9 @@ body {
 </style>
 
 <style>
-box {
+  box {
   box-sizing: border-box;
-}
+  }
 body {
   margin: 0;
   font-family: Arial;
@@ -156,8 +184,8 @@ body {
     <div class="loader">
         <img src="./media/IMG_4629.png" alt="Spin logo">
     </div>
-    <div class="center">
-        <b>Kathy Beyer Photography</b>
+    <div class="shape">
+        <h1><b>Kathy Beyer Photography</b><h1>
         <p>Committed to Excellence</p>
     </div>
     <br>
@@ -168,7 +196,7 @@ body {
          <a class="active" href="#home">Home</a>
      </div>
     <br>
-/* <div class="row">
+ <div class="row">
      <div class="column">
          <img src="./media/IMG_6448.jpg" alt="Backyard" style="width:100%" onclick="myFunction(this);">
      </div>
@@ -191,7 +219,7 @@ body {
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%">
     <div id="imgtext"></div>
-</div> */
+</div>
     
 <script>
 function myFunction(imgs) {
